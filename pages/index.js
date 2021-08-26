@@ -29,7 +29,6 @@ export default function Home() {
         onSubmit={(e) => {
           e.preventDefault()
           // need to add validator and error states
-          debugger
           if (email) {
             fetch('/api/email-capture', {
               method: 'POST',
